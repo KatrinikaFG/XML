@@ -1,0 +1,85 @@
+XML
+ 21. Создать внешний репозиторий c названием XML:
+	На главной странице GitHub
+	New => Repository name: XML => отметить флажки "Public" & "Add a README file" => Create repository
+ 22. Клонировать репозиторий XML на локальный компьютер:
+	на странице репозитория XML:
+	Code => HTTPS or SSH => копируем ссылку => в GitBash открываем нужную папку: cd (путь к папку) => git clone <ссылка>
+ 23. Внутри локального XML создать файл “new.xml”:
+	cd XML => touch new.xml (vim new.xml/cat > new.xml - если надо сразу внести текст в файл)
+ 24. Добавить файл под гит:
+	git add new.xml
+ 25. Закоммитить файл:
+	git commit -m "Add empty"
+ 26. Отправить файл на внешний GitHub репозиторий:
+	git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML:
+	vim new.xml/cat >> new.xml
+
+<surname>Феоктистова</surname>
+<firstName>Екатерина</firstName>
+<lastName>Геннадьевна</lastName>
+<numberOfPets>0</numberOfPets>
+<desiredSalary>от 1000$</desiredSalary>
+	
+ 28. Отправить изменения на внешний репозиторий:
+	git commit -am "Add info"
+	git push
+ 29. Создать файл preferences.xml
+	cat >> preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML:
+
+<favoriteMovie>The Matrix</favoriteMovie>
+<favoriteSeries>Friends</favoriteSeries>
+<favoriteFood>Lasagna</favoriteFood>
+<favoritSeason>Spring</favoritSeason>
+<wantToVisit>Brazil</wantToVisit>
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML:
+	vim skills.xml
+
+<Skills>
+    <1>Terminal, GitBash</1>
+    <2>JavaScript</2>
+    <3>Postman</3>
+    <4>HTTP</4>
+    <5>SQL</5>
+    <6>Dev Tools</6>
+    <7>Charles/Fidler</7>
+    <8>Android Studio</8>
+</Skills>
+
+ 32. Сделать коммит в одну строку:
+	git add .| git commit -m "Add new files"
+ 33. Отправить сразу 2 файла на внешний репозиторий:
+	git push
+ 34. На веб интерфейсе создать файл bug_report.xml:
+	на странице репозитория XML:
+	Add file => Create new file => name
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+	"Add ampty" => Commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML:
+	открываем файл, кликая на название => иконка карандаш (Edit this file):
+
+<bugReport>
+	<project>Pro-X</project>
+	<ID>#000001</ID>
+	<createdDate>03.05.2022</createdDate>
+	<status>New</status>
+	<priority>Medium</priority>
+	<findIn>Mozilla Firefox 99.0.1</findIn>
+	<title>Incorrect project state in Project viewing mode</title>
+	<description> 
+		<1.>Choose a project and click Edit Button</1.>
+		<2>Change the status of the project</2>
+		<3>Click Save changes</3>
+		<4>Click Project Viewing page</4>
+	</description>
+	<result>The status is not renewed</result>
+	<expectedResult>The status is renewed</expectedResult>
+</bugReport>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+	"New bug" => Commit new file 
+ 38. Синхронизировать внешний и локальный репозиторий XML:
+	git pull (git fetch - проверить наличие расхождений)
