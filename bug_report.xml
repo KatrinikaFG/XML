@@ -1,1 +1,17 @@
-
+<bugReport>
+	<project>Pro-X</project>
+	<ID>#000001</ID>
+	<createdDate>03.05.2022</createdDate>
+	<status>New</status>
+	<priority>Medium</priority>
+	<findIn>Mozilla Firefox 99.0.1</findIn>
+	<title>Incorrect project state in Project viewing mode</title>
+	<description> 
+		<1.>Choose a project and click Edit Button</1.>
+		<2>Change the status of the project</2>
+		<3>Click Save changes</3>
+		<4>Click Project Viewing page</4>
+	</description>
+	<result>The status is not renewed</result>
+	<expectedResult>The status is renewed</expectedResult>
+</bugReport>
